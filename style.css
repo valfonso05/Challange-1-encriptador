@@ -153,7 +153,7 @@ p{
   margin-top: 10%;
   color: #0A3871;
   width: 80%;
-  height: 60%;
+  height: 12%;
   background: #F3F5FC;
   outline: none;
   border: none;
@@ -173,7 +173,7 @@ h3{
 footer{
   text-align: center;
   color: #13e683;
-  background: url(img/bg.jpg);
+  background: url(.//imagenes/bg.jpg);
   margin-top: 6rem;
   padding: 3.5rem;
 }
@@ -201,4 +201,17 @@ div li a img:hover{
 
 footer div{
   margin-left: 3rem;
+}
+
+@media (max-width:768px){
+  .derecho{
+    float:none;
+  }
+
+  
+  /*
+  .izquierda input{
+    flex-direction: ;
+  }*/
+
 }
