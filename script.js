@@ -5,12 +5,10 @@ function encriptar() {
 
   //valida el texto introducido
   var input = document.getElementById("textIn").value;
-  if(!/^[a-zñ]+$/m.test(input)) {
+  if(!/^[a-zñ]+$/m.test(input.value)) {
     alert("No se permiten caracteres especiales. ");
     return false;
-  }
-
-  if(input){
+  } else{
     // igm es para afectar a mayusculas, minusculas, toda la linea y varias lineas.
     var txtcifrado = texto.replace(/e/igm,"enter");
     var txtcifrado = txtcifrado.replace(/i/igm,"imes");
@@ -35,13 +33,11 @@ function desencriptar() {
   var texto = document.getElementById("textIn").value.toLowerCase();
 
   //valida el texto introducido
-  var entrada = document.getElementById("textIn").value;
-  if(!/^[a-zñ-ú]+$/m.test(entrada)) {
+  var input = document.getElementById("textIn").value;
+  if(!/^[a-zñ]+$/m.test(input.value)) {
     alert("No se permiten caracteres especiales. ");
     return false;
-  }
-
-  if(entrada){
+  } else{
     // igm es para afectar a mayusculas, minusculas, toda la linea y varias lineas.
     var texto = document.getElementById("textIn").value.toLowerCase();
     var txtcifrado = texto.replace(/enter/igm,"e");
