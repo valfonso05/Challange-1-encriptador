@@ -5,40 +5,58 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="cuadroTexto">
-      <div class="logo">
-        <img class="logoImagen" src="imagenes/logo.png">
-        <h1 class="tittle">Encriptador de mensaje</h1>
-      </div>
-      <div class="izquierda">
-          <input class="entradaTexto" type="text" name="input-texto" id="entradaTexto" placeholder="Ingrese el texto aqui">
-      </div>
-      <div class="derecho">
-        <img src="imagenes/imagen.png" id="imagenPagina">
-        <h1 id="texto">Ningún mensaje fue encontrado</h1>
-        <textarea id="texto2" >Ingresa el texto que desees encriptar o desenciptar.</textarea>
-        <button type="button" id="copiar" onclick="copia()">Copiar</button>
-      </div>
-      <p class="mandato">Sólo letra minusculas y sin acento</p>
-      <div class="botonIzquierdo">
-        <button type="button" id="botonEncriptar" onclick="encriptar()">Encriptar</button>
-        <button type="button" id="botonDesencriptar" onclick="desencriptar()">Desencriptar</button>
-        <button type="button" id="botonlimpiar" onclick="limpiar()">Limpiar</button>
-      </div>
+    <div id="container">
+      <header>
+        <section class="containerHead">
+          <div class="logoTitle">
+            <img class="logoImagen" src="img/logo.png">
+            <h2 class="tittle">Encriptador de mensaje</h2>
+          </div>
+        </section>
+      </header>
+      <main>
+        <div class="containerMain">
+          <div class="rightSide">
+            <textarea type="text" name="input-texto" id="textIn" placeholder="Ingrese el texto aqui"></textarea>
+          </div>
+          <div class="containerMandate">
+            <img src="img/Exclamation.png">
+            <p class="mandate">Sólo letras minusculas y sin acentos</p>
+          </div>  
+          <div class="buttons">
+            <button type="button" id="btnEncrypt" onclick="encriptar()">Encriptar</button>
+            <button type="button" id="btnDecrypt" onclick="desencriptar()">Desencriptar</button>
+            <button type="button" id="btnClear" onclick="limpiar()">Limpiar</button>
+          </div>
+        </div>
+        <div class="containerSecondary">
+          <div id="leftSide" class="leftSide">
+            <img src="img/imgLeftside.png" id="imgLeftside">
+            <h2 id="text">Ningún mensaje fue encontrado</h2>
+            <p id="textTwo" >Ingresa el texto que desees encriptar o desenciptar.</p>
+          </div>
+          <div class="textOut">
+            <textarea id="textEncrypted" readonly></textarea>
+            <div>
+              <button type="button" id="btnCopy" onclick="copia()">Copiar</button>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
     <footer>
-      <div>
-        <p class="creador">&copy Desarrollada por Victor Alfonso Moreno Nuñez - 2022.</p>
-      </div>
-      <div class="redessociales">
-        <li class="redes"><a class="imagenesredes" href="https://www.linkedin.com/in/valfonso05" target="blank"><img class="social" src="redes/linkedin.png"></a>
-        </li>
-        <li class="redes"><a class="imagenesredes" href="https://github.com/valfonso05/" target="blank"><img class="social" src="redes/github.png"></a>
-        </li>
-        <li class="redes"><a class="imagenesredes" href="https://twitter.com/valfonso05" target="blank"><img class="social" src="redes/twitter.png"></a>
-        </li>
+      <div class="footercontainer">
+          <p class="creator">&copy Desarrollada por Victor Alfonso Moreno Nuñez - 2022.</p>
+        <div>
+          <li class="networks"><a class="imgNetworks" href="https://www.linkedin.com/in/valfonso05" target="blank"><img class="social" src="networks/linkedin.png"></a>
+          </li>
+          <li class="networks"><a class="imgNetworks" href="https://github.com/valfonso05/" target="blank"><img class="social" src="networks/github.png"></a>
+          </li>
+          <li class="networks"><a class="imgNetworks" href="https://twitter.com/valfonso05" target="blank"><img class="social" src="networks/twitter.png"></a>
+          </li>
+        </div>
       </div>
     </footer>
-  <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

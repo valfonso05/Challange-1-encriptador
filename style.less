@@ -1,21 +1,24 @@
 /*Legenda de colores*/
-:root {
-  --background-color: #F3F5FC;
-  --title-color: #0b50a3;
-  --letters-color: #194375;
+:root{
+    --background-color: #F3F5FC;
+    --title-color: #0b50a3;
+    --letters-color: #194375;
+   
 }
-html,
-body {
+
+html, body{
   margin: 0;
   padding: 0;
   background-color: var(--background-color);
-  box-sizing: border-box;
+  box-sizing: border-box
 }
-#container {
+
+#container{
   max-width: 1200px;
   margin: 0 auto;
 }
-.containerHead {
+
+.containerHead{
   float: left;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
@@ -23,45 +26,52 @@ body {
   margin: 30px;
   color: var(--title-color);
 }
-.logoImagen {
+
+.logoImagen{
   float: left;
 }
-.containerMain {
+
+.containerMain{
   float: left;
   width: 796px;
   height: 577px;
   padding: 20px;
 }
-.rightSide {
+
+.rightSide{
   width: 90%;
   height: 577px;
   margin-top: 80px;
 }
-#textIn,
-#textIn:focus {
+
+#textIn, #textIn:focus{
   color: var(--letters-color);
   font-size: 32px;
 }
-#textIn::placeholder {
+
+#textIn::placeholder{
   color: var(--letters-color);
   font-size: 32px;
 }
-#textIn {
+
+#textIn{
   width: 100%;
   height: 100%;
   resize: none;
   border: 0;
   border-radius: 10px;
   outline: none;
-  box-shadow: 0px 24px 32px -8px rgba(154, 154, 154, 0.2);
+  box-shadow: 0px 24px 32px -8px rgb(154 154 154 / 20%);
   overflow-wrap: break-word;
   background-color: var(--background-color);
 }
-.containerMandate {
+
+.containerMandate{
   display: flex;
   align-items: flex-end;
 }
-#btnEncrypt {
+
+#btnEncrypt{
   padding: 22px;
   color: white;
   width: 28%;
@@ -71,7 +81,8 @@ body {
   margin-left: 1rem;
   margin-right: 1rem;
 }
-#btnDecrypt {
+
+#btnDecrypt{
   padding: 22px;
   width: 28%;
   height: 60%;
@@ -80,7 +91,8 @@ body {
   border-radius: 24px;
   margin-right: 1rem;
 }
-#btnClear {
+  
+#btnClear{
   padding: 22px;
   color: white;
   width: 28%;
@@ -88,28 +100,32 @@ body {
   background: #0A3871;
   border-radius: 24px;
 }
-#btnEncrypt:hover {
+  
+#btnEncrypt:hover{
   color: #0A3871;
   background: white;
   border: solid #9ca1a7;
   font-size: 15px;
-  transform: scale(1.1);
+  transform: scale(1.1)
 }
-#btnDecrypt:hover {
+  
+#btnDecrypt:hover{
   color: #D8DFE8;
-  background: #948787;
+  background: rgb(148, 135, 135);
   font-size: 15px;
   border: solid #0A3871;
-  transform: scale(1.1);
+  transform: scale(1.1)
 }
-#btnClear:hover {
+  
+#btnClear:hover{
   color: #0A3871;
   background: white;
   border: solid #9ca1a7;
   font-size: 15px;
-  transform: scale(1.1);
+  transform: scale(1.1)
 }
-.containerSecondary {
+
+.containerSecondary{
   float: left;
   width: 324px;
   height: 824px;
@@ -117,41 +133,47 @@ body {
   padding: 20px;
   background-color: #FFFFFF;
   border-radius: 32px;
-  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 24px 32px -8px rgb(0 0 0 / 8%);
   overflow: hidden;
 }
-.leftSide {
+
+.leftSide{
   float: left;
   margin-top: 208px;
 }
-#text {
+
+#text{    
   margin-left: 36px;
   text-align: center;
   width: 254px;
 }
-#textTwo {
+
+#textTwo{
   margin-left: 36px;
   text-align: center;
   width: 254px;
 }
-.textOut {
+
+.textOut{
   height: 774px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-#textEncrypted {
+
+#textEncrypted{
   line-height: 150%;
   font-size: 32px;
   color: #495057;
   word-wrap: break-word;
   margin: 0;
   border: none;
-  outline-style: none;
+  outline-style: none; // Oculta las lineas del textarea
   height: 100%;
-  resize: none;
+  resize: none; // Oculta los scroll de width y height
 }
-#btnCopy {
+
+#btnCopy{
   margin-left: 18%;
   display: none;
   padding: 22px;
@@ -160,37 +182,45 @@ body {
   background: #D8DFE8;
   border-radius: 24px;
 }
-#btnCopy:hover {
+  
+#btnCopy:hover{
   color: #D8DFE8;
-  background: #948787;
+  background: rgb(148, 135, 135);
   font-size: 15px;
   border: solid #0A3871;
-  transform: scale(1.2);
+  transform: scale(1.2)
 }
-footer {
+
+footer{
   float: left;
   width: 100%;
   height: 60px;
   text-align: center;
   margin: 15px 0;
 }
-.footercontainer {
+
+.footercontainer{
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px;
-}
-.creator {
+} 
+
+.creator{
   color: blue;
   margin-top: 64px;
   margin-bottom: 32px;
-}
-.networks {
+}  
+ 
+.networks{
   display: inline;
-  margin-inline: 1rem;
+  margin-inline: 1rem;  
 }
-.social {
-  height: 4rem;
+  
+.social{
+  height: 4rem; 
 }
-div li a img:hover {
-  transform: scale(1.5);
+  
+div li a img:hover{
+  transform: scale(1.5)
 }
+  
